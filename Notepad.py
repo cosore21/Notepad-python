@@ -4,7 +4,7 @@ root=Tk()
 root.geometry("600x600")
 root.title("Notepad")
 root.config(bg='grey')
-root.resizable(False,False)
+root.resizable()
 
 def save_file():
     open_file=filedialog.asksaveasfile(mode='w',defaultextension='.txt')
